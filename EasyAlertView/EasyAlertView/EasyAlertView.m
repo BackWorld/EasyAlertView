@@ -43,6 +43,12 @@
     return v;
 }
 
+#pragma mark - private method
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    [self dismiss];
+}
+
 #pragma mark - setters
 
 #pragma mark - getters
